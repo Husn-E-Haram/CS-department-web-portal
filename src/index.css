@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-ivory: #F8F4EC;
+  --color-beige: #EDE2D1;
+  --color-cream: #FFFDF8;
+  --color-walnut: #8A6748;
+  --color-taupe: #B5A18A;
+  --color-charcoal: #332D27;
+  --color-olive: #85836A;
+}
+
+:root {
+  --bg-ivory: #F8F4EC;
+  --bg-beige: #EDE2D1;
+  --bg-cream: #FFFDF8;
+  --c-walnut: #8A6748;
+  --c-taupe: #B5A18A;
+  --c-charcoal: #332D27;
+  --c-olive: #85836A;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  background-color: #F8F4EC;
+  color: #332D27;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Modern clean sans-serif typography for all headings */
+h1, h2, h3, h4, h5, h6, .font-serif, .font-display {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  letter-spacing: -0.02em;
+}
+
+/* Custom scrollbar matching palette */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F4EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #B5A18A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8A6748;
+}
